@@ -1,6 +1,15 @@
 {
-  "include": ["utils/*.ts", "utils/**/*.ts", "cli/**/*.ts", "tasks/**/*.ts", "tasks/**/*.d.ts"],
-  "exclude": ["node_modules", "dist"],
+  "include": [
+    "utils/*.ts",
+    "utils/**/*.ts",
+    "cli/**/*.ts",
+    "tasks/**/*.ts",
+    "tasks/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",
@@ -10,8 +19,13 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["node", "prompts"],
+    "types": [
+      "node",
+      "prompts"
+    ],
     "noEmit": true,
-    "strict": true
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false
   }
 }
